@@ -1,0 +1,7 @@
+apply plugin: 'war'
+
+war {
+    baseName = 'fileBrowser'
+    from 'web' // adds a file-set to the root of the archive
+    webInf { from 'WEB-INF' } // adds a file-set to the WEB-INF dir.
+}
