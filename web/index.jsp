@@ -32,18 +32,18 @@
 	*If true, all operations (besides upload and native commands) 
 	*which change something on the file system are permitted
 	*/
-	private static final boolean READ_ONLY = false;
+	private static final boolean READ_ONLY = true;
 	//If true, uploads are allowed even if READ_ONLY = true
-	private static final boolean ALLOW_UPLOAD = true;
+	private static final boolean ALLOW_UPLOAD = false;
 
     //Allow browsing and file manipulation only in certain directories
-	private static final boolean RESTRICT_BROWSING = false;
+	private static final boolean RESTRICT_BROWSING = true;
     //If true, the user is allowed to browse only in RESTRICT_PATH,
     //if false, the user is allowed to browse all directories besides RESTRICT_PATH
-    private static final boolean RESTRICT_WHITELIST = false;
+    private static final boolean RESTRICT_WHITELIST = true;
     //Paths, sperated by semicolon
     //private static final String RESTRICT_PATH = "C:\\CODE;E:\\"; //Win32: Case important!!
-	private static final String RESTRICT_PATH = "/etc;/var";
+	private static final String RESTRICT_PATH = "C:\\";
 
     //The refresh time in seconds of the upload monitor window
 	private static final int UPLOAD_MONITOR_REFRESH = 2;
