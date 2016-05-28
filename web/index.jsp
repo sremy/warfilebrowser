@@ -63,7 +63,7 @@
 	/**
 	 * The name of an optional CSS Stylesheet file
 	 */
-	private static final String CSS_NAME = "Browser.css";
+	private static final String CSS_NAME = "browser.css";
 	/**
 	 * The compression level for zip file creation (0-9)
 	 * 0 = No compression
